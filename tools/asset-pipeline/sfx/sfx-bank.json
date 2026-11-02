@@ -1,0 +1,24 @@
+{
+  "$comment": "Sound bank for generate-sfx.mjs. Each entry is a preset + seed (reproducible), a raw jsfxr params object, or a b58 string copied from sfxr.me. 'params' always overrides the preset roll. See README.md.",
+  "defaults": {
+    "sample_rate": 44100,
+    "sample_size": 16,
+    "sound_vol": 0.25
+  },
+  "sounds": [
+    { "name": "jump",       "preset": "jump",        "seed": 101, "variants": 3 },
+    { "name": "coin",       "preset": "pickupCoin",  "seed": 202, "variants": 2 },
+    { "name": "hit",        "preset": "hitHurt",     "seed": 303, "variants": 3 },
+    { "name": "explosion",  "preset": "explosion",   "seed": 404, "variants": 2 },
+    { "name": "laser",      "preset": "laserShoot",  "seed": 505, "variants": 3 },
+    { "name": "powerup",    "preset": "powerUp",     "seed": 606 },
+    { "name": "ui_select",  "preset": "blipSelect",  "seed": 707 },
+    { "name": "ui_click",   "preset": "click",       "seed": 808 },
+    {
+      "name": "jump_heavy",
+      "preset": "jump",
+      "seed": 101,
+      "params": { "p_base_freq": 0.22, "p_env_decay": 0.35 }
+    }
+  ]
+}

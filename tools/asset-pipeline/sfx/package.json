@@ -1,0 +1,22 @@
+{
+  "name": "ccgs-sfx-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generate retro sound effects (WAV) from jsfxr presets and parameters.",
+  "type": "module",
+  "bin": {
+    "generate-sfx": "./generate-sfx.mjs"
+  },
+  "scripts": {
+    "generate": "node generate-sfx.mjs",
+    "list": "node generate-sfx.mjs --list",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "jsfxr": "1.4.1"
+  },
+  "license": "MIT"
+}
